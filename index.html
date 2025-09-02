@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Aged</title>
+  <link href="https://fonts.cdnfonts.com/css/agmena" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #ddd;
+      overflow-x: hidden;
+      position: relative;
+
+      /* Background image settings */
+      background-image: url("background.jpg"); /* your local image */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* Dark overlay to make text readable */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(26, 26, 26, 0.5); /* semi-transparent overlay */
+      z-index: -1;
+    }
+
+    /* Gradient strip behind YOU AGED */
+    .header-strip {
+      width: 100%;
+      padding: 30px 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.219));
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-family: "Times New Roman", serif;
+      font-size: 6em;
+      font-weight: bold;
+      margin: 0;
+      color: #4F0001;
+      animation: fadeLoop 6s infinite;
+    }
+
+    @keyframes fadeLoop {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    p {
+      font-family: 'Agmena', serif;
+      font-size: 1.4em;
+      max-width: 900px;
+      margin: 20px auto 40px auto;
+      line-height: 1.8;
+      white-space: pre-line;
+      color: #ddd;
+    }
+
+    .bold-large {
+      font-size: 1.6em;
+    }
+
+    .present {
+      font-size: 1.4em;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+
+    .present a img {
+      max-width: 300px;
+      border: 3px solid #b30000;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .present a img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- YOU AGED header at the top --> <br><br><br><br>
+  <div class="header-strip">
+    <h1>YOU AGED</h1>
+  </div>
+
+  <!-- All other text below -->
+  <p class="text-overlay">
+    FOUL TARNISHED IN SEARCH OF THE ELDEN PRESENT.  
+    EMBOLDENED BY THE FLAME OF YOUR BIRTHDAY.  
+    SOMEONE MUST WISH YOU A HAPPY BIRTHDAY.
+
+    <span class="bold-large">LET IT BE KAMI THE MAD !!! </span><br>
+    THE FALLEN LEAVES TELL A STORY...THE BIRTHDAY CAKE WAS EATEN IN YOUR HOME, ACROSS THE KITCHEN, IN THE LIVING ROOM BETWEEN.<br>
+    HAPPY BIRTHDAY YE TARNISHED, THOU ART OF PASSING SKILL.
+    MAY YOUR RUNES BE MANY AND YOUR PROBLEMS FEW.<br>
+    <span class="bold-large">PRISE THE ELDEN LORD !!!</span>
+  </p>
+
+  <div class="bold-large"><i>NEW ITEM ACQUIRED <3 </div>
+
+  <div class="present">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1/" target="_blank">
+      <img src="https://cdn.akamai.steamstatic.com/steam/apps/2358720/header.jpg" alt="Wukong Present">
+    </a>
+  </div>
+
+</body>
+</html>
